@@ -3,102 +3,286 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="description" content="Jeonghan Yu — wearable robotics, rehabilitation robotics, human movement analysis, and mechanism design." />
   <title>Jeonghan Yu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <div class="container header-content">
-      <div>
+    <div class="container hero">
+      <div class="hero-text">
+        <p class="eyebrow">Mechanical Engineering · Rehabilitation Robotics · Human Movement</p>
         <h1>Jeonghan Yu</h1>
-        <!-- <img src="assets/profile.jpg" alt="Jeonghan Yu" class="profile-photo" /> -->
-        <p class="subtitle">
-          Postdoctoral Research Scientist · Mechanical Engineering · Columbia University
-        </p>
+        <p class="subtitle">Postdoctoral Research Scientist, Department of Mechanical Engineering, Columbia University</p>
         <p class="tagline">
-          Wearable robotics, rehabilitation robotics, human movement analysis, and design intelligence.
+          I develop and study human-centered robotic systems by integrating wearable robot design,
+          rehabilitation robotics, biomechanics, control, and computational mechanism synthesis.
         </p>
+
+        <div class="hero-links">
+          <a href="#publications">Publications</a>
+          <a href="#research">Research</a>
+          <a href="#teaching">Teaching</a>
+          <a href="assets/cv.pdf">CV</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
 
-      <nav>
-        <a href="#about">Jeonghan Yu, Ph.D.</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="hero-card">
+        <div class="initials">JY</div>
+        <p><strong>Research focus</strong></p>
+        <p>Design, control, experimentation, and biomechanical analysis of wearable and rehabilitation robotic systems.</p>
+      </div>
     </div>
   </header>
 
+  <nav class="top-nav">
+    <div class="container nav-inner">
+      <a href="#about">Who I am</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <main class="container">
     <section id="about" class="section">
-      <h2>Jeonghan Yu, Ph.D.</h2>
+      <h2>Who I am</h2>
       <p>
-        I am a postdoctoral research scientist in Mechanical Engineering at Columbia University.
-        My research focuses on wearable and rehabilitation robotics, human movement analysis,
-        mechanism design, and data-driven approaches for understanding and assisting human motion.
+        I am a postdoctoral research scientist in the Department of Mechanical Engineering at Columbia University,
+        working with Prof. Sunil K. Agrawal. My research centers on wearable and rehabilitation robotics,
+        biomechanical analysis of whole-body movement, and robotic training systems for individuals with neurological injuries.
       </p>
       <p>
-        I received my B.S. and combined M.S./Ph.D. in Mechanical Engineering from Seoul National University.
-        My broader research goal is to develop human-centered robotic systems that integrate mechanical design,
-        control, biomechanics, and computational intelligence.
+        I received my Ph.D. in Mechanical Engineering from Seoul National University, advised by Prof. Yoon Young Kim.
+        My doctoral research focused on topology optimization and autonomous synthesis of self-aligning wearable exoskeleton
+        mechanisms. Across my work, I aim to connect mechanical design intelligence with physically effective,
+        human-specific robotic assistance.
       </p>
     </section>
 
     <section id="research" class="section">
       <h2>Research</h2>
 
-      <div class="card">
-        <h3>Wearable and Rehabilitation Robotics</h3>
-        <p>
-          I design and evaluate robotic systems that physically interact with the human body,
-          with a focus on effective assistance, adaptability, and human-specific motor behavior.
-        </p>
-      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Wearable and Rehabilitation Robotics</h3>
+          <p>
+            Design, control, and experimental evaluation of exoskeletons and cable-driven robotic systems
+            for gait assistance, balance support, standing, sitting, and functional upper-body activities.
+          </p>
+        </article>
 
-      <div class="card">
-        <h3>Human Movement Analysis</h3>
-        <p>
-          I analyze whole-body kinematics, ground reaction forces, center of pressure, and intersegmental coordination
-          to understand how humans organize movement and stability during complex motor tasks.
-        </p>
-      </div>
+        <article class="card">
+          <h3>Human Movement and Biomechanics</h3>
+          <p>
+            Motion-capture, ground-reaction-force, EMG, and center-of-pressure analysis to understand
+            movement coordination, postural stability, and human-specific assistance needs.
+          </p>
+        </article>
 
-      <div class="card">
-        <h3>Design Intelligence</h3>
-        <p>
-          I am interested in computational and data-driven methods for robotic mechanism design,
-          including optimization, synthesis, and learning-based design frameworks.
-        </p>
+        <article class="card">
+          <h3>Mechanism Design Intelligence</h3>
+          <p>
+            Topology optimization, shape optimization, sensitivity analysis, and nonlinear inverse design
+            for linkage mechanisms and adaptive wearable robotic joints.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Control and Human-Robot Interaction</h3>
+          <p>
+            Adaptive impedance control, model predictive control, real-time motor control, and AI-driven
+            assistance strategies for physical human-robot interaction.
+          </p>
+        </article>
       </div>
     </section>
 
     <section id="publications" class="section">
       <h2>Publications</h2>
 
-      <p class="note">
-        Selected publications are listed below. Full publication list can be linked to Google Scholar, ORCID, or CV.
-      </p>
-
-      <ol class="publication-list">
+      <h3>Journal Articles</h3>
+      <ol class="pub-list">
         <li>
-          <strong>Jeonghan Yu</strong>, et al.
-          “Title of your paper.”
-          <em>Journal Name</em>, Year.
+          <strong>Jeonghan Yu</strong>, Isirame Omofuma, Darren Biskup, Himanshu Pota, and Sunil K. Agrawal.
+          “Whole-Body Coordination and Spinopelvic Alignment during Yoga Standing Maneuvers: Comparing Practitioners with Non-Practitioners.”
+          <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>, vol. 34, pp. 2773–2785, 2026.
+          <a href="https://doi.org/10.1109/TNSRE.2026.3697342">DOI</a>
         </li>
 
         <li>
-          <strong>Jeonghan Yu</strong>, et al.
-          “Title of your paper.”
-          <em>Journal Name</em>, Year.
+          Jegyeong Ryu, Jongjun Lee, <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Virtual Framework Customizing Wearable Mechanisms: An Application to Gait-Assistive Mobile Hip Robots.”
+          <em>Robotics and Autonomous Systems</em>, vol. 192, 105052, 2025.
+          <a href="https://doi.org/10.1016/j.robot.2025.105052">DOI</a>
         </li>
 
         <li>
-          Author list.
-          “Multi-scale multi-resolution reinforcement learning topology optimization: application to elastic-wave metamaterial design.”
-          <em>Structural and Multidisciplinary Optimization</em>, 2026.
+          <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Autonomous Synthesis of Self-Aligning Knee Joint Exoskeleton Mechanisms.”
+          <em>IEEE Transactions on Robotics</em>, vol. 41, pp. 2358–2373, 2025.
+          <a href="https://doi.org/10.1109/TRO.2025.3547274">DOI</a>
+        </li>
+
+        <li>
+          Jongjun Lee, Jegyeong Ryu, Gyuik Lee, <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Single-Actuator Hip Exoskeleton Mechanism Design with Actuation in Frontal and Sagittal Planes: Design Methodology and Experimental Validation.”
+          <em>IEEE Access</em>, vol. 11, pp. 136630–136642, 2023.
+          <a href="https://doi.org/10.1109/ACCESS.2023.3337144">DOI</a>
+        </li>
+
+        <li>
+          <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Simultaneous Shape and Topology Optimization of Planar Linkage Mechanisms Based on the Spring-Connected Rigid Block Model.”
+          <em>Journal of Mechanical Design</em>, vol. 142, no. 1, 011404, 2020.
+          <a href="https://doi.org/10.1115/1.4044327">DOI</a>
+        </li>
+      </ol>
+
+      <h3>Manuscripts Under Review</h3>
+      <ol class="pub-list compact-list">
+        <li>
+          <strong>Jeonghan Yu</strong> and Sunil K. Agrawal.
+          “Proficiency-Dependent Postural Stability and Force Organization during Symmetric and Asymmetric Yoga Maneuvers while Standing.”
+          <em>Under review</em>, 2026.
+        </li>
+
+        <li>
+          Byung Wook Kim, Edward Choi, Jaewon Cho, <strong>Jeonghan Yu</strong>, Chawin Ophaswongse, and Sunil K. Agrawal.
+          “PRISMNet: Cross-Subject Multimodal Seated Posture Classification.”
+          <em>Under review</em>, 2026.
+        </li>
+
+        <li>
+          Darren Biskup, <strong>Jeonghan Yu</strong>, Zibo Yu, and Sunil K. Agrawal.
+          “Ground Reaction Force-Aware Model Predictive Control for Underactuated Upright Physical Assistance.”
+          <em>Under review</em>, 2026.
+        </li>
+      </ol>
+
+      <h3>International Conferences</h3>
+      <ol class="pub-list compact-list">
+        <li>
+          <span class="tag">Oral</span><span class="tag">Poster</span>
+          <strong>Jeonghan Yu</strong>, Jongjun Lee, Seungtae Yang, Junyoung Moon, Yoon Young Kim, and Giuk Lee.
+          “Control of a Flexible Shaft-Driven Hip Exoskeleton Mechanism Emulator for Gait Assistance.”
+          <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, Detroit, MI, USA, 2023.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Mechanism Topology Optimization of Self-Aligning Knee Exoskeletons.”
+          <em>15th World Congress on Structural and Multidisciplinary Optimization (WCSMO)</em>, Cork, Ireland, 2023.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Noble Design of Adaptive and Efficient Knee Exoskeletons by Mechanism Topology Optimization Method.”
+          <em>15th World Congress on Computational Mechanics (WCCM-XV) and 8th Asian Pacific Congress on Computational Mechanics (APCOM-VII)</em>,
+          Yokohama, Japan, 2022.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          Neung Hwan Yim, <strong>Jeonghan Yu</strong>, Jungho Kim, Seok Won Kang, and Yoon Young Kim.
+          “Why Are Spring-Connected Block Models Useful for Topology Optimization of Rigid-Body Linkage Mechanisms?”
+          <em>Asian Congress on Structural and Multidisciplinary Optimization (ACSMO)</em>, Matsue, Japan, 2022.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Path Generation of Planar Linkage Mechanisms by Simultaneous Shape and Topology Optimization Based on the Spring-Connected Rigid Block Model.”
+          <em>13th World Congress on Structural and Multidisciplinary Optimization (WCSMO)</em>, Beijing, China, 2019.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Simultaneous Shape and Topology Optimization of Planar Linkage Mechanisms Based on the Spring-Connected Rigid Block Model.”
+          <em>Asian Congress on Structural and Multidisciplinary Optimization (ACSMO)</em>, Dalian, China, 2018.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          Seok Won Kang, <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Topology Optimization of General-Joint Planar Linkage Mechanisms with an Application to Finger Rehabilitation Device Design.”
+          <em>12th World Congress on Structural and Multidisciplinary Optimization (WCSMO)</em>, Braunschweig, Germany, 2017.
+        </li>
+      </ol>
+
+      <h3>Conferences Held in Korea</h3>
+      <ol class="pub-list compact-list">
+        <li>
+          <span class="tag">Oral</span><span class="tag award">Best Paper Award</span>
+          <strong>Jeonghan Yu</strong>, Jongjun Lee, Seungtae Yang, Junyoung Moon, Giuk Lee, and Yoon Young Kim.
+          “Flexible Shaft Control for Power Transmission of Wearable Exoskeleton Robots.”
+          <em>KSME 2023 Spring Annual Meeting — Dynamics and Control Division</em>, Busan, Korea, 2023.
+        </li>
+
+        <li>
+          <span class="tag">Poster</span>
+          Gyuik Lee, Jongjun Lee, <strong>Jeonghan Yu</strong>, Youngsoo Kim, Giuk Lee, and Yoon Young Kim.
+          “Performance Evaluation of Spherical Mechanism in Hip Joint Exoskeleton Robot for Centroidal Alignment.”
+          <em>Samsung Global Symposium</em>, Seoul, Korea, 2023.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span><span class="tag award">Best Student Presentation Award</span>
+          <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Topology Optimization Design of an Exoskeleton Self-Alignment Mechanism Joint Considering Mechanical Advantage.”
+          <em>KSME 2021 Spring Annual Meeting — CAE and Applied Mechanics Division</em>, Online, 2021.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          Jegyeong Ryu, Seok Won Kang, Jongjun Lee, <strong>Jeonghan Yu</strong>, and Yoon Young Kim.
+          “Simulation-Based Shape Optimization of Wearable Hip Robots to Reduce Metabolic Energy Cost in Walking.”
+          <em>KSME 2021 Spring Annual Meeting — CAE and Applied Mechanics Division</em>, Online, 2021.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Synthesis of Planar Linkage Mechanisms by Concurrent Shape and Topology Optimization Using SBM.”
+          <em>KSME 2018 Spring Annual Meeting — CAE and Applied Mechanics Division</em>, Yeosu, Korea, 2018.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          Seok Won Kang, <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Design of a Linkage Mechanism for Finger Rehabilitation Device by Using a New Topology Optimization Method.”
+          <em>KSME 2017 Spring Annual Meeting — CAE and Applied Mechanics Division</em>, Jeju, Korea, 2017.
+        </li>
+
+        <li>
+          <span class="tag">Oral</span>
+          Seok Won Kang, <strong>Jeonghan Yu</strong>, Sang Min Han, and Yoon Young Kim.
+          “Controlling Complicated Joints in Automatic Synthesis of Planar Linkage Mechanisms.”
+          <em>KSME 2016 Annual Meeting — CAE and Applied Mechanics Division</em>, Gangwon, Korea, 2016.
+        </li>
+
+        <li>
+          <span class="tag">Poster</span>
+          <strong>Jeonghan Yu</strong>, Sang Min Han, Seok Won Kang, and Yoon Young Kim.
+          “Simultaneous Shape and Topology Optimization of Planar Linkage Mechanisms Based on the Spring-Connected Rigid Block Model.”
+          <em>KSME 2016 Spring Annual Meeting — CAE and Applied Mechanics Division</em>, Jeju, Korea, 2016.
+        </li>
+      </ol>
+
+      <h3>Patent</h3>
+      <ol class="pub-list compact-list">
+        <li>
+          <strong>Jeonghan Yu</strong>, Seok Won Kang, and Yoon Young Kim.
+          “Knee Joint Guide Apparatus.”
+          Korea Patent 10-2638771, 2024; US Patent 12383417, 2025.
         </li>
       </ol>
     </section>
@@ -106,38 +290,99 @@
     <section id="teaching" class="section">
       <h2>Teaching</h2>
 
-      <p>
-        My teaching interests include robotics, dynamics, control, mechanism design,
-        biomechanics, mechatronics, numerical methods, and data-driven engineering design.
-      </p>
+      <div class="split">
+        <div>
+          <h3>Teaching Interests</h3>
+          <ul>
+            <li>Robotics and mechatronics</li>
+            <li>Dynamics, system dynamics, and automatic control</li>
+            <li>Wearable and rehabilitation robotics</li>
+            <li>Biomechanics and human movement analysis</li>
+            <li>Mechanism design, optimal design, and computational design</li>
+            <li>Human-robot interaction</li>
+          </ul>
+        </div>
 
+        <div>
+          <h3>Teaching Assistant Experience</h3>
+          <ul>
+            <li>Elasticity, Seoul National University, Spring 2023</li>
+            <li>Solid Mechanics, Seoul National University, Spring 2021</li>
+            <li>Optimal Design, Seoul National University, Spring 2018</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Mentoring and Lectures</h3>
       <ul>
-        <li>Robotics and Mechatronics</li>
-        <li>Dynamics and System Dynamics</li>
-        <li>Automatic Control</li>
-        <li>Mechanics of Materials</li>
-        <li>Computational Modeling in Biomechanics and Robotics</li>
-        <li>Human-Robot Interaction</li>
+        <li>Mentored research on real-time visual feedback GUIs for training protocols.</li>
+        <li>Mentored projects on mechanism synthesis, crossed-link topology optimization, and physics-informed neural network-based mechanism design.</li>
+        <li>Delivered lectures and seminars on mechanism topology optimization, exoskeleton design, and engineering design from problem definition to prototype production.</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Postdoctoral Research Scientist · Columbia University</h3>
+          <p class="meta">Department of Mechanical Engineering · New York, USA · 2024–Current</p>
+          <p>
+            Robotic rehabilitation systems, biomechanical analysis of whole-body movements, spinal cord injury training,
+            system design, programming, testing, data collection, and data analysis.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Postdoctoral Researcher · Seoul National University</h3>
+          <p class="meta">Soft Robotics Research Center · Seoul, Korea · 2024</p>
+          <p>Optimization of robot design and control.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Postdoctoral Researcher · Chung-Ang University</h3>
+          <p class="meta">Seoul, Korea · 2024</p>
+          <p>Wearable exoskeleton robot design, control, experimentation, and hip balance assistance strategies.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Ph.D. · Seoul National University</h3>
+          <p class="meta">Mechanical Engineering · Seoul, Korea · 2017–2024</p>
+          <p>
+            Thesis: Topology Optimization of Self-Aligning Wearable Exoskeleton Robot Mechanism.
+            Advisor: Prof. Yoon Young Kim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <h2>Awards and Activities</h2>
+
+      <ul class="award-list">
+        <li><strong>Best Paper Award</strong>, KSME Dynamics and Control Division, 2024.</li>
+        <li><strong>Best Student Presentation Award</strong>, KSME CAE and Applied Mechanics Division, 2022.</li>
+        <li><strong>7th Place Winner in Mechanical Engineering</strong>, 28th Humantech Paper Award, Samsung, 2022.</li>
+        <li><strong>Representative of Seoul National University</strong>, Rising Stars Women in Engineering Workshop, Asian Deans’ Forum, 2022.</li>
+        <li><strong>CES 2023 Exhibition</strong>, Chameleon Knee Robot, SNU Pavilion in Eureka Park, Las Vegas, USA.</li>
       </ul>
     </section>
 
     <section id="contact" class="section">
       <h2>Contact</h2>
 
-      <p>
-        Email: <a href="mailto:sailoryu@naver.com">sailoryu@naver.com</a>
-      </p>
-      <p>
-        GitHub: <a href="https://github.com/sailoryu">@sailoryu</a>
-      </p>
-      <p>
-        CV: <a href="assets/cv.pdf">Download CV</a>
-      </p>
+      <p>Email: <a href="mailto:jy3471@columbia.edu">jy3471@columbia.edu</a></p>
+      <p>Secondary email: <a href="mailto:sailoryu@snu.ac.kr">sailoryu@snu.ac.kr</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jeonghan-yu/">jeonghan-yu</a></p>
+      <p>CV: <a href="assets/cv.pdf">Download CV</a></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Jeonghan Yu</p>
+    <div class="container">
+      <p>© 2026 Jeonghan Yu. Built with GitHub Pages.</p>
+    </div>
   </footer>
 </body>
 </html>
